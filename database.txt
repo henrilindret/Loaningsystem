@@ -1,0 +1,25 @@
+CREATE TABLE `motherboard_list` (
+  `ID` int(11) NOT NULL,
+  `Motherboardname` varchar(255) NOT NULL,
+  `Working` tinyint(1) NOT NULL,
+  `Loaned` tinyint(1) NOT NULL,
+  `Broken` tinyint(1) NOT NULL,
+  `Repair` tinyint(1) NOT NULL,
+  `Brokentext` varchar(255) NOT NULL,
+  `RepairedText` varchar(255) NOT NULL
+)
+
+
+INSERT INTO `motherboard_list` (`ID`, `Motherboardname`, `Working`, `Loaned`, `Broken`, `Repair`, `Brokentext`, `RepairedText`) VALUES
+(1, 'motherboard1', 1, 0, 0, 0, ' ', ' '),
+(2, 'motherboard2', 1, 0, 0, 0, ' ', ' '),
+(3, 'motherboard3', 1, 0, 0, 0, ' ', ' ');
+
+
+
+CREATE TABLE `changelog` (
+  `ID` int(11) NOT NULL,
+  `Brokentext` varchar(255) NOT NULL,
+  `date_time` datetime NOT NULL,
+  `motherboard_name` varchar(255) DEFAULT NULL
+)

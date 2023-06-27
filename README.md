@@ -1,0 +1,1 @@
+This is a very work-in-progress project with a primary focus on developing a system to enhance item management for workers at my current job while also studying and learning more about coding for myself.
